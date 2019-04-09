@@ -9,6 +9,7 @@ export default class Stopwatch extends Component {
 
     componentDidMount = () => {
         this.interval = setInterval(this.onTick);
+        console.log(this.interval)
     }
 
     componentWillUnmount = () => {
@@ -36,6 +37,7 @@ export default class Stopwatch extends Component {
     };
 
     onTick = () => {
+
         if (this.state.running) {
             let now = Date.now();
             this.setState({
