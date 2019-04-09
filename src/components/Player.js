@@ -5,7 +5,7 @@ const Player = props => {
     return (
         <div className="player">
             <div className="player-name">
-                <a className="remove-player" onClick={props.onRemove}>x</a>
+                <button className="remove-player" onClick={props.onRemove}>x</button>
                 {props.name}
             </div>
             <div className="player-score">

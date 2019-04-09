@@ -29,8 +29,9 @@ export default class Scoreboard extends Component {
     }
 
     onScoreChange = (index, delta) => {
-        this.state.players[index].score += delta;
-        this.setState(this.state);
+        const players = this.state.players;
+        players[index].score += delta;
+        this.setState({ players: players });
     }
 
     onAddPlayer = name => {
