@@ -1,7 +1,11 @@
-import React from 'reat';
-
+import React from 'react';
+import Stopwatch from '../components/Stopwatch';
 const Scoreboard = props => {
     return (
-        <div>Scoreboard</div>
+        <div>Scoreboard
+            <Stopwatch />
+        </div>
     )
 }
+
+export default Scoreboard;
