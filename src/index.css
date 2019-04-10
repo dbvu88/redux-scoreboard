@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font-family: monospace;
   padding: 10px;
   border-radius: 10px;
@@ -9,8 +10,12 @@ div, p, button {
   color: #366b5a;
 }
 
+button, input {
+  border: none;
+}
 .scoreboard {
-  width: 500px;
+
+  max-width: 325px;
   background: aquamarine;
   margin: auto;
 }
@@ -22,14 +27,79 @@ div, p, button {
   color: aquamarine;
 }
 
+.stopwatch {
+  /* width: 50%; */
+}
+h2 {
+  margin: 0px;
+}
+.stopwatch button {
+  margin: 10px;
+  color: aquamarine;
+  background: #366b5a;
+  border: none;
+  width: 75px;
+}
+.stopwatch-time {
+  font-size: 50px;
+}
+.remove-player {
+  border-radius: 50%;
+  padding:0px;
+  border: none;
+  background: #ff0638;
+  color: #366b5a;
+}
+
 h1 {
   text-align: center;
   color: #366b5a;
 }
 
 .player {
+  
+  background: #366b5a;
+  margin: 15px;
+}
+
+.player * {
+  color: aquamarine;
+
+}
+
+.counter button {
+  padding: 0px;
+  box-sizing: border-box; 
+  background: #366b5a;
+  /* width: 100%; */
+  color: aquamarine;
+  border: none;
+}
+
+form, .counter {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form {
+  position: fixed;
+  top: 0px;
+  background: #366b5a;
+}
+
+form .name {
+  width: 100%;
+}
+
+.remove-player {
+  padding: 5px;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-name button {
+  margin-right: 20px;
 }
