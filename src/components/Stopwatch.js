@@ -53,12 +53,14 @@ export default class Stopwatch extends Component {
             <div className="stopwatch">
                 <h2>Stopwatch</h2>
                 <div className="stopwatch-time">{seconds}</div>
-                {
-                    this.state.running ?
-                    <button onClick={this.onStop}>Stop</button> :
-                    <button onClick={this.onStart}>Start</button>
-                }
-                <button onClick={this.onReset}>Reset</button>
+                <div className="button-container" >
+                    {
+                        this.state.running ?
+                        <button onClick={this.onStop}>Stop</button> :
+                        <button onClick={this.onStart}>Start</button>
+                    }
+                    <button onClick={this.onReset}>Reset</button>
+                </div>
             </div>
         )
     }

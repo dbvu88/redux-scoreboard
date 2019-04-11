@@ -16,14 +16,14 @@ export default class AddPlayerForm extends Component {
     onSubmit = event => {
 
         if (event) event.preventDefault();
-        this.props.onAdd(this.state.name);
+        this.props.addPlayer(this.state.name);
         this.setState({ name: ''})
     }
 
     render = () => {
         return (
         <div className="add-player-form">
-            <form onSubmit={this.onSubmit} >
+            <form className="home" onSubmit={this.onSubmit} >
                 <input
                 className="name" 
                 type="text"
